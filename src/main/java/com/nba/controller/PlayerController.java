@@ -15,9 +15,9 @@ public class PlayerController
     @GetMapping(value = "/playerId")
     private Player getPlayerId()
     {
-        String url = "http://" + rapidApiHost + "/players/playerId";
+        String uri = "http://" + rapidApiHost + "/players/playerId";
         RestTemplate restTemplate = new RestTemplate();
-        Player result = restTemplate.getForObject(url, Player.class);
+        Player result = restTemplate.getForObject(uri, Player.class);
         return result;
     }
 }

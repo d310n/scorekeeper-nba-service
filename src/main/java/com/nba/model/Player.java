@@ -2,19 +2,20 @@ package com.nba.model;
 
 public class Player
 {
-    private int id;
-
     private String firstName;
 
     private String lastName;
 
+    private String country;
+
+    private String league;
+
+    private String teamId;
+
+    private int playerId;
+
     public Player()
     {
-    }
-
-    public int getId()
-    {
-        return id;
     }
 
     public String getFirstName()
@@ -25,5 +26,22 @@ public class Player
     public String getLastName()
     {
         return lastName;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public String getLeague() {
+        return league;
+    }
+
+    public String getTeamId() {
+        return teamId;
+    }
+
+    public int getPlayerId()
+    {
+        return playerId;
     }
 }

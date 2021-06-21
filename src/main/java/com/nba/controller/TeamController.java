@@ -15,9 +15,9 @@ public class TeamController
     @GetMapping(value = "/teamId")
     private Team getTeamId()
     {
-        String url = "http://" + rapidApiHost + "/teams/teamId";
+        String uri = "http://" + rapidApiHost + "/teams/teamId";
         RestTemplate restTemplate = new RestTemplate();
-        Team result = restTemplate.getForObject(url, Team.class);
+        Team result = restTemplate.getForObject(uri, Team.class);
         return result;
     }
 }
